@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+	<div>
+		<form>
+			<fieldset>
+				<label>Username: </label>
+				<input type="text" name="us" id="usr"><br><br>
+				<label>Password: </label>
+				<input type="text" name="Password" id="pwd"><br><br>
+				<input type="button" name="lgn" value="LOGIN"
+				onclick="fetchData()">
+				<input type="reset" name="cncl" value="CANCEl"
+			</fieldset>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function fetchData()
+		{
+			let username=document.getElementById('usr').value;
+			let password=document.getElementById('pwd').value;
+			document.write("Username: "+username+"<br>");
+			document.write("Password: "+password+"<br>");
+			console.log("Username: "+username);
+			console.log("Username: "+password);
+			alert("Please read carefully");
+			prompt("Enter some value");
+			let name=prompt('Enter Your name');
+			document.write("MY name is "+name);
+		}
+	</script>
+
+
+
+</body>
+</html>
