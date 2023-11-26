@@ -1,0 +1,20 @@
+Syntax:
+1) CSS Locator: Tagname[AttributeName='AttributeValue']
+
+2)Relative Path
+  
+   1)Xpath by Attribute://tagname[@AttributeName='AttributeValue']
+   2)Xpath by text://tagname[text()='textvalue']
+   3)Xpath by Contains:
+		//tagname[Contains(@AttributeName,'PartialAttributeValue')]
+		//tagname[Contains(text(), 'PartialtextValue')]
+   4)Xpath by Group index:(xpath)[index value]
+   5)Independent and Dependent Xpath:
+	1)Identify Which is FixedElement and DynamicElement
+	2)Write xpath for FixedElement
+	3)update the xpath to perform backword traversing(/..) to find the common parent for FixedElement
+	and DyanmicElement
+	4)update the xpath by Writtting xpath for DynamicElement
+   6)Xpath by Axes
+	FixedElement/axesname::tagname[Predicate or Conditions]
+  
